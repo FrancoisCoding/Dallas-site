@@ -1,0 +1,353 @@
+.section-about {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.bio-left {
+  margin-top: 5rem;
+}
+
+.bio-left-title {
+  font-size: 3rem;
+}
+
+.about-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-title-container img {
+  height: 3rem;
+}
+
+.about-title-text {
+  padding: 0rem 3rem 0rem 2rem;
+}
+
+.dallas-title-text {
+  padding: 0rem 5rem 3rem 8rem;
+}
+
+.bio-right img {
+  float: right;
+  padding: 0 2rem 2rem 0;
+}
+
+.first-paragraph {
+  padding-bottom: 2rem;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  padding: 0rem 1rem 0rem 12rem;
+}
+
+.mission {
+  display: flex;
+  align-items: center;
+  background-color: #120c0c;
+  justify-content: space-around;
+}
+
+.mission-header {
+  font-size: 5rem;
+  color: #eac061;
+  padding: 3rem 3rem 3rem 8rem;
+}
+
+.mission-text {
+  padding: 5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.company-about-header {
+  font-size: 3rem;
+  padding: 3rem 0;
+}
+
+.company-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.company-about-text {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.company-about-text-top {
+  padding-bottom: 2rem;
+}
+
+.company-about-text-left {
+  padding-right: 3rem;
+}
+
+.qualified {
+  padding: 5rem;
+  display: flex;
+}
+
+.qualified-header {
+  font-size: 3rem;
+  padding: 0 0 0 2rem;
+}
+
+.qualified-header-top {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+.qualified-text {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+.qualified-text-top {
+  padding-bottom: 2rem;
+}
+
+.qualified-text-list {
+  padding: 3rem;
+}
+
+.qualified-hidden {
+  display: none;
+}
+
+.about-list {
+  list-style: none; /* Remove default bullets */
+}
+
+.about-list li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #eac061; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  background: #606161 !important;
+  align-items: center;
+  padding: 2rem;
+}
+
+.why-header {
+  font-size: 3rem;
+  color: #eac061;
+}
+
+.why-text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.why-text-link {
+  color: #eac061;
+  text-decoration: underline;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.why-card {
+  background: #eac061;
+  color: white;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.why-card-header {
+  padding: 2rem 0.5rem;
+  font-size: 2rem;
+}
+
+.why-card-text {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-about {
+    flex-direction: column;
+  }
+
+  .bio-right {
+    order: 1;
+  }
+
+  .bio-right img {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+
+  .bio-left {
+    order: 2;
+  }
+
+  .about-title-container img {
+    display: none;
+  }
+
+  .about-title-text {
+    padding: 0;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .cj-title-text {
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .mission {
+    flex-direction: column;
+  }
+
+  .mission-header {
+    font-size: 2rem;
+    color: #eac061;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .mission-text {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .company-about-header {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .company-about {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .company-about-text {
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .company-about-text-left {
+    padding-right: 0rem;
+  }
+
+  .qualified-title {
+    order: 1;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .qualified-header-top {
+    font-size: 2rem;
+  }
+
+  .qualified-header {
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .qualified-left {
+    order: 2;
+  }
+
+  .qualified-left img {
+    width: 100%;
+  }
+
+  .qualified {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .qualified-right {
+    order: 3;
+  }
+
+  .qualified-hidden {
+    display: block;
+  }
+
+  .qualified-hidden-two {
+    display: none;
+  }
+
+  .qualified-text {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .qualified-text-list {
+    padding: 2rem;
+    line-height: 2rem;
+  }
+
+  .why {
+    padding: 1rem;
+  }
+
+  .why-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .why-text {
+    font-size: 1rem;
+  }
+
+  .why-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .why-card {
+    background: #eac061;
+    color: #120c0c;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .why-card-header {
+    padding: 1rem 0.25rem;
+    font-size: 2rem;
+  }
+
+  .why-card-text {
+    padding: 1rem;
+  }
+}

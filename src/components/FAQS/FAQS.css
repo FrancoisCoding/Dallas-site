@@ -1,0 +1,79 @@
+.faqs-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs-top-header {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.faqs-image {
+  width: 8rem;
+  padding: 2rem 0;
+}
+
+.faqs-tabs {
+  margin-top: 3rem;
+}
+
+.tab-additional-info {
+  text-align: end;
+  font-size: 1.5rem;
+  margin-bottom: 15rem;
+}
+
+.tab-link {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+.faqs-text-list {
+  padding: 1rem;
+  width: 100%;
+  height: 90%;
+}
+
+.faqs-list {
+  list-style: none; /* Remove default bullets */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  font-size: 0.8rem !important;
+}
+
+.faqs-list li {
+  padding: 0.5rem;
+}
+
+.faqs-list li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #eac061; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+@media only screen and (max-width: 600px) {
+  .faqs-top-header {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .faqs-image {
+    width: 6rem;
+    padding: 1rem 0;
+  }
+
+  .faqs-list {
+    flex-direction: row;
+    font-size: 1rem !important;
+  }
+  .faqs-list li {
+    padding: 1rem;
+  }
+}

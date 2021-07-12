@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+.navbar {
+  width: 100%;
+  height: 10rem;
+  background-color: #606161;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-header {
+  width: 100%;
+  text-align: center;
+
+}
+
+.navbar-header a{
+  color: white;
+  font-size: 3rem;
+  font-family: 'STIX Two Math', serif;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-header a:hover{
+  color: #eac061;
+}
+
+.menu-item {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.menu-item-home {
+  margin-top: 8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-white {
+    width: 8rem;
+    margin-left: -4rem !important; /* 50% of your logo width */
+    top: 25%;
+  }
+
+  .menu-item {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
