@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Contact.css";
 import axios from "axios";
+import { Button, Segment, Dimmer, Loader, Modal } from "semantic-ui-react";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -13,13 +14,22 @@ const Contact = () => {
     email: "",
   });
 
+  const [open, setOpen] = useState(false);
+  const [success, setSuccess] = useState(false);
+
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    axios.post("https://dallas-emailer.herokuapp.com/", formState);
+    setOpen(true);
+    axios
+      .post("https://dallas-emailer.herokuapp.com/", formState)
+      .then((res) => {
+        console.log(res, "RESPONSE FROM SENDING EMAIL");
+        setSuccess(true);
+      });
   };
 
   useEffect(() => {
@@ -28,6 +38,36 @@ const Contact = () => {
 
   return (
     <div>
+      <Modal
+        onClose={() => setOpen(false)}
+        onOpen={() => setOpen(true)}
+        open={open}
+        className="facebook-modal"
+      >
+        {success ? (
+          <Modal.Header>Success</Modal.Header>
+        ) : (
+          <Modal.Header>Sending Email</Modal.Header>
+        )}
+
+        {success ? (
+          <Modal.Content>
+            <h1>True Inspections Services will reach out to you shortly !</h1>
+          </Modal.Content>
+        ) : (
+          <Modal.Content>
+            <Segment>
+              <Dimmer active inverted>
+                <Loader inverted>Loading</Loader>
+              </Dimmer>
+            </Segment>
+          </Modal.Content>
+        )}
+
+        <Modal.Actions>
+          <Button onClick={() => setOpen(false)}>Close</Button>
+        </Modal.Actions>
+      </Modal>
       <Navbar />
       <div className="contact">
         <div className="contact-top">
