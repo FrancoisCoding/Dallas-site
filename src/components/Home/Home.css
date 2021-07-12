@@ -34,11 +34,11 @@
 }
 
 .bm-cross {
-  background: #E5BC61;
+  background: #e5bc61;
 }
 
 .bm-item:focus {
-  color: #E5BC61;
+  color: #e5bc61;
   outline: none;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .main-subheader {
-  color: #E5BC61;
+  color: #e5bc61;
   margin-top: 2rem;
 }
 
@@ -114,13 +114,13 @@
 }
 
 .icon-info p {
-  padding:.25rem;
+  padding: 0.25rem;
   font-size: 1.3rem;
 }
 
 .home-icon {
-  font-size:4rem;
-  color: #E5BC61;
+  font-size: 4rem;
+  color: #e5bc61;
 }
 
 @media only screen and (max-width: 600px) {
@@ -148,5 +148,9 @@
     width: 80%;
     text-align: center;
     margin-bottom: 5rem;
+  }
+
+  .main-subheader {
+    text-align: center;
   }
 }
