@@ -4,7 +4,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
 
-const Routes = ({}) => {
+const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
