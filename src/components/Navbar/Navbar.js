@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  let history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
 
   if (isOpen) {
@@ -17,7 +16,7 @@ const Navbar = () => {
     <div className="navbar" style={{ overflow: "hidden !important" }}>
       <div className="menu">
         <Menu
-          customBurgerIcon={<img src="https://i.imgur.com/M1SyJcd.png" />}
+          customBurgerIcon={<img src="https://i.imgur.com/M1SyJcd.png" alt='Menu'/>}
           width={"100%"}
           onOpen={() => setIsOpen(true)}
           onClose={() => setIsOpen(false)}
