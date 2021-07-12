@@ -19,12 +19,12 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    axios.post("https://thawing-temple-42838.herokuapp.com/", formState);
+    axios.post("https://dallas-emailer.herokuapp.com/", formState);
   };
 
   useEffect(() => {
-    window.scrollTo(0,0);
-  },[])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
@@ -37,7 +37,7 @@ const Contact = () => {
             alt="Phone"
             className="contact-image"
           />
-          <p className="contact-link">true@inspections.com</p>
+          <p className="contact-link">dallasisominspections@gmail.com</p>
         </div>
         <form className="contact-form" onSubmit={sendEmail}>
           <div className="contact-form-top">
