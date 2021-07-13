@@ -1,5 +1,16 @@
-.home-property {
-  width: 100%;
+.carousel-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background: #606161;
+}
+
+.gallery img {
+  height: 100%;
 }
 
 .bm-menu {

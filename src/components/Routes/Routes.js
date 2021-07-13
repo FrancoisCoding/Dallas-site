@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import About from "../About/About";
+import Certifications from "../Certifications/Certifications";
 import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
 
@@ -10,6 +11,7 @@ const Routes = () => {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/certifications" component={Certifications} />
     </Switch>
   );
 };

@@ -1,0 +1,9 @@
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.certifications-grid img {
+  width: 25rem;
+}

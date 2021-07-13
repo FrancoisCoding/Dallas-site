@@ -16,7 +16,7 @@ const Footer = () => {
           </Link>
 
           <a
-            href="../Agreements/InterNACHI_Standards_of_Practice.pdf"
+            href="../Agreements/Pre-Inspection_agreement.docx"
             className="footer-faqs-link link"
             download
           >

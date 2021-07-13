@@ -15,7 +15,9 @@ const Navbar = () => {
     <div className="navbar" style={{ overflow: "hidden !important" }}>
       <div className="menu">
         <Menu
-          customBurgerIcon={<img src="https://i.imgur.com/M1SyJcd.png" alt='Menu'/>}
+          customBurgerIcon={
+            <img src="https://i.imgur.com/M1SyJcd.png" alt="Menu" />
+          }
           width={"100%"}
           onOpen={() => setIsOpen(true)}
           onClose={() => setIsOpen(false)}
@@ -30,12 +32,24 @@ const Navbar = () => {
           <Link to="/contact" id="contact" className=" menu-item">
             CONTACT US
           </Link>
-          <a href="../Agreements/InterNACHI_Standards_of_Practice.pdf" className=" menu-item" download>AGREEMENT</a>
 
+          <Link to="/certifications" className=" menu-item">
+            CERTIFICATIONS
+          </Link>
+
+          <a
+            href="../Agreements/InterNACHI_Standards_of_Practice.pdf"
+            className=" menu-item"
+            download
+          >
+            AGREEMENT
+          </a>
         </Menu>
       </div>
       <div className="navbar-header">
-      <Link to="/" id="home" >True Inspections Services of Central Florida</Link>
+        <Link to="/" id="home">
+          True Inspections Services of Central Florida
+        </Link>
       </div>
     </div>
   );
