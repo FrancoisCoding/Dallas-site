@@ -9,6 +9,10 @@
   background: #606161;
 }
 
+.carousel {
+  width: 50% !important;
+}
+
 .gallery img {
   height: 100%;
 }
@@ -163,5 +167,9 @@
 
   .main-subheader {
     text-align: center;
+  }
+
+  .carousel {
+    width: 100% !important;
   }
 }

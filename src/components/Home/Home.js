@@ -29,12 +29,7 @@ const Home = () => {
 
       <section className="top-section">
         <div className="gallery">
-          <Carousel
-            autoPlay={true}
-            infiniteLoop={true}
-            width="50%"
-            dynamicHeight={true}
-          >
+          <Carousel autoPlay={true} infiniteLoop={true} dynamicHeight={true}>
             <div>
               <img src="https://i.imgur.com/rCtpE99.jpg" alt="Sink" />
               <h1 className="legend">
