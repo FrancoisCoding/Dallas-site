@@ -37,12 +37,24 @@ const Navbar = () => {
             CERTIFICATIONS
           </Link>
 
+          <Link to="/gallery" className=" menu-item">
+            GALLERY
+          </Link>
+
           <a
-            href="../Agreements/InterNACHI_Standards_of_Practice.pdf"
-            className=" menu-item"
+            href="../Agreements/Pre-Inspection_agreement.docx"
+            className="menu-item"
             download
           >
             AGREEMENT
+          </a>
+
+          <a
+            href="../Agreements/InterNACHI_Standards_of_Practice.pdf"
+            className="menu-item"
+            download
+          >
+            STANDARDS OF PRACTICE
           </a>
         </Menu>
       </div>

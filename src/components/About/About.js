@@ -40,7 +40,7 @@ const About = () => {
           </div>
         </div>
         <div className="bio-right">
-          <img src="https://i.imgur.com/e1FgCtH.jpg" alt="Dallas" />
+          <img src="https://i.imgur.com/9a18MSR.jpg" alt="Dallas" />
         </div>
       </section>
 
@@ -71,14 +71,6 @@ const About = () => {
             </p>
           </div>
         </div>
-        <p className="why-text">
-          Pre-inspection agreement: <br />
-          4-point Pre-inspection agreement:{" "}
-          <span className="why-text-link">www.example.com</span>
-          <br />
-          Entire Home Pre-Inspection agreement:{" "}
-          <span className="why-text-link">www.example.com</span>
-        </p>
       </section>
 
       <Footer />
