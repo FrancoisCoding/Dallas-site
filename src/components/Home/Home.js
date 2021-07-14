@@ -27,11 +27,7 @@ const Home = () => {
 
       <section className="top-section">
         <div className="home-hero">
-          <img
-            src="https://i.imgur.com/Iub1jHA.jpg"
-            alt="True Inspection Logo"
-            className="home-logo"
-          />
+          <img src="https://i.imgur.com/9a18MSR.jpg" alt="Dallas" />
         </div>
         <div className="top-section-info">
           <div className="top-section-info-text">

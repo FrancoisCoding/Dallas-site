@@ -40,7 +40,11 @@ const About = () => {
           </div>
         </div>
         <div className="bio-right">
-          <img src="https://i.imgur.com/9a18MSR.jpg" alt="Dallas" />
+          <img
+            src="https://i.imgur.com/Iub1jHA.jpg"
+            alt="True Inspection Logo"
+            className="home-logo"
+          />
         </div>
       </section>
 
