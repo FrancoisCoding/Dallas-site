@@ -38,7 +38,7 @@ const Gallery = () => {
             <img src="https://i.imgur.com/U32tkwu.jpg" alt="Sink" />
             <h1 className="legend">
               An active plumbing leak is a material defect and can cause other
-              moisture related problems fast! In Framing around the plumbing is
+              moisture related problems fast! The framing around the plumbing is
               rotten and should be replaced and repaired.
             </h1>
           </div>
