@@ -15,14 +15,14 @@ const Gallery = () => {
           <div>
             <img src="https://i.imgur.com/rCtpE99.jpg" alt="Sink" />
             <h1 className="legend">
-              Know before you buy, how clean is the water that is coming though
+              Know before you buy, how clean is the water that is coming through
               the pipes
             </h1>
           </div>
           <div>
             <img src="https://i.imgur.com/BQtYiCQ.jpg" alt="Sink" />
             <h1 className="legend">
-              Know before you buy, how clean is the water that is coming though
+              Know before you buy, how clean is the water that is coming through
               the pipes
             </h1>
           </div>
